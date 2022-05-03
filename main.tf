@@ -6,7 +6,7 @@ provider "google" {
 resource "google_compute_instance" "def" {
   name         = "test"
   machine_type = "e2-medium"
-  #zone         = "us-central1-a"
+  zone         = "us-central1-a"
   count        = 2
 
   tags = ["xp", "lp"]
