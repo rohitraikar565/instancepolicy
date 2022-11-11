@@ -1,5 +1,5 @@
 variable "machine" {
-  default = "e2-medium"
+  default = "n2-standard-2"
 }
 variable "project" {
   default = "niveus-delivery-project"
