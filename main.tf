@@ -4,7 +4,7 @@ provider "google" {
 }
 resource "google_compute_instance" "def" {
   name         = "test"
-  machine_type = var.machine_type
+  machine_type = var.machine
   zone         = "us-central1-a"
   count        = 2
 
