@@ -1,10 +1,10 @@
 provider "google" {
-  project     = "niveus-delivery-products"
+  project     = var.project
   zone        = "us-central1"
 }
 resource "google_compute_instance" "def" {
   name         = "test"
-  machine_type = "e2-medium"
+  machine_type = var.machine_type
   zone         = "us-central1-a"
   count        = 2
 
