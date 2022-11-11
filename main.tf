@@ -6,7 +6,7 @@ resource "google_compute_instance" "def" {
   name         = "test"
   machine_type = var.machine
   zone         = "us-central1-a"
-  count        = 2
+  count        = 1
 
   boot_disk {
     initialize_params {
