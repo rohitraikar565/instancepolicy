@@ -4,7 +4,9 @@ module "tfplan-functions" {
 
 module "tfstate-functions" {
     source = "./tfstate-functions.sentinel"
-}module "gcp-functions" {
+}
+    
+module "gcp-functions" {
     source = "./gcp-functions/gcp-functions.sentinel"
 }
 
