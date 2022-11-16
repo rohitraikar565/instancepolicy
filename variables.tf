@@ -5,6 +5,11 @@ variable "project" {
   default = "niveus-delivery-project"
 }
 variable "labels" {
-  type = list
-  default = [name, ttl, owner]
+  type = map(string)
+  default = {
+    owner       = "demouser"
+    name        = "rohit"
+    app         = "demo"
+    ttl         = "24"
+  }
 }
