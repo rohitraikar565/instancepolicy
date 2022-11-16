@@ -34,3 +34,7 @@ policy "limit-proposed-monthly-cost" {
     source = "./limit-proposed-monthly-cost.sentinel"
     enforcement_level = "advisory"
 }
+policy "enforce-mandatory-labels" {
+    source = "./enforce-mandatory-labels.sentinel"
+    enforcement_level = "advisory"
+}
