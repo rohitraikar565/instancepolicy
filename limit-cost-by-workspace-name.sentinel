@@ -11,7 +11,7 @@ import "decimal"
 
 # Monthly Limits
 limits = {
-  "dev": decimal.new(200),
+  "instancepolicy": decimal.new(200),
   "qa": decimal.new(500),
   "prod": decimal.new(1000),
 }
