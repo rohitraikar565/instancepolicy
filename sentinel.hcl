@@ -4,6 +4,8 @@ module "tfplan-functions" {
 
 module "tfstate-functions" {
     source = "./tfstate-functions.sentinel"
+}module "gcp-functions" {
+    source = "./gcp-functions/gcp-functions.sentinel"
 }
 
 module "tfconfig-functions" {
@@ -13,7 +15,9 @@ module "tfconfig-functions" {
 module "tfrun-functions" {
     source = "./tfrun-functions.sentinel"
 }
-
+module "gcp-functions" {
+    source = "./gcp-functions.sentinel"
+}
 
 policy "allowed-resources" {
     source = "./allowed-resources.sentinel"
